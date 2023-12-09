@@ -118,7 +118,7 @@ Eigen::VectorXd KDLController::idCntr(KDL::Frame &_desPos,
 ////    std::cout << "Jnt lmt gradient: " << std::endl << grad.transpose() << std::endl;
 ////    std::cout << "---------------------" << std::endl;
 
-   // inverse dynamics
+   // Inverse dynamics
    //std::cout<<robot_->getJntVelocities()<<std::endl;         //TEST
 
    /*APPLYING FORMULAE 4 (HW_2)*/
@@ -170,7 +170,7 @@ Eigen::VectorXd KDLController::idCntr(KDL::Frame &_desPos,
    dot_x_tilde << dot_e_p;
    dot_dot_x_d << dot_dot_p_d;
 
-   // inverse dynamics
+   // Inverse dynamics
    Eigen::Matrix<double,3,1> y;
 
    /*APPLYING FORMULAE 4 (HW_2)*/
